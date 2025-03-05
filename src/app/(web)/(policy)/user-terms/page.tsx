@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Poppins } from "next/font/google";
+import { siteName } from "@/constant";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -115,15 +116,15 @@ const TermsPage = () => {
           <li>Copyright infringement</li>
           <li>Spam or unauthorized message activity</li>
           <li>Unethical, exploitative, and malicious behavior</li>
-          <li>Unauthorized use of Photosframemaker property</li>
+          <li>Unauthorized use of {siteName} property</li>
         </ul>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>
           Intellectual Property Rights:
         </h2>
         <p className="w-full text-left">
-          Material on the website is owned by Photosframemaker. Users may
-          download one copy for personal, non-commercial use. License terminates
-          on violation.
+          Material on the website is owned by {siteName}. Users may download one
+          copy for personal, non-commercial use. License terminates on
+          violation.
         </p>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>
           User Generated Content:
@@ -148,7 +149,7 @@ const TermsPage = () => {
         </h2>
         <p className="w-full text-left">
           Creators can create campaigns but must ensure they comply with
-          Photosframemaker community guidelines.
+          {siteName} community guidelines.
         </p>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>
           Personal Use:
@@ -158,14 +159,14 @@ const TermsPage = () => {
         </p>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>Ads:</h2>
         <p className="w-full text-left">
-          Advertisements on Photosframemaker are third-party content.
-          Photosframemaker isn&apos;t responsible for ad accuracy.
+          Advertisements on {siteName} are third-party content.
+          {siteName} isn&apos;t responsible for ad accuracy.
         </p>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>
           Obligation:
         </h2>
         <p className="w-full text-left">
-          Photosframemaker provides services &quot;as is&quot; and disclaims
+          {siteName} provides services &quot;as is&quot; and disclaims
           warranties. Not liable for any loss. No compensation for issues.
         </p>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>
@@ -177,21 +178,21 @@ const TermsPage = () => {
         </p>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>Link:</h2>
         <p className="w-full text-left">
-          Photosframemaker isn&apos;t responsible for linked site content. Use
-          linked sites at your own risk.
+          {siteName} isn&apos;t responsible for linked site content. Use linked
+          sites at your own risk.
         </p>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>
           Right to Terminate:
         </h2>
         <p className="w-full text-left">
-          Photosframemaker may suspend or terminate users for violations.
+          {siteName} may suspend or terminate users for violations.
         </p>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>
           Termination:
         </h2>
         <p className="w-full text-left">
-          Photosframemaker can terminate services for violations. The Terms
-          constitute the entire agreement.
+          {siteName} can terminate services for violations. The Terms constitute
+          the entire agreement.
         </p>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>
           Government Regulations:
@@ -209,15 +210,14 @@ const TermsPage = () => {
           Service Changes:
         </h2>
         <p className="w-full text-left">
-          Photosframemaker reserves the right to modify or withdraw services
-          without notice.
+          {siteName} reserves the right to modify or withdraw services without
+          notice.
         </p>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>
           Policy Modification:
         </h2>
         <p className="w-full text-left">
-          Photosframemaker may modify policies; users are bound to the revised
-          terms.
+          {siteName} may modify policies; users are bound to the revised terms.
         </p>
         <h2 className={cn("text-xl font-[600]", poppins.className)}>
           Amendment to Terms:

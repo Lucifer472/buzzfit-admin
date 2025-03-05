@@ -7,7 +7,7 @@ const AboutUs = () => {
         About {siteName}
       </h2>
       <p className="text-justify font-medium text-xl px-4 mb-6">
-        BuzzSight is a website designed specifically for all users worldwide,
+        {siteName} is a website designed specifically for all users worldwide,
         offering the most trending and entertaining content information. <br />
         <br />
         <br /> It features entertainment tests, professional assessments, image

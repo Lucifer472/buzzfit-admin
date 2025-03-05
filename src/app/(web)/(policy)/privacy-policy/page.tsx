@@ -1,3 +1,4 @@
+import { siteName } from "@/constant";
 import { cn } from "@/lib/utils";
 import { Poppins } from "next/font/google";
 
@@ -22,7 +23,7 @@ const PrivacyPolicy = () => {
       </span>
       <div className="max-w-[750px] mx-auto flex flex-col items-start gap-y-4 w-full">
         <p className="w-full text-left">
-          TruepubMedia Solution Private Limited, operating photosframemaker.com,
+          TruepubMedia Solution Private Limited, operating {siteName}.com,
           values your privacy. This policy outlines how we collect, maintain,
           and disclose information resulting from your use of our services.
         </p>
@@ -203,8 +204,8 @@ const PrivacyPolicy = () => {
           Compliance (EU):
         </h2>
         <p className="w-full text-left">
-          Data Controller/Processor: Photosframemaker is the Data
-          Controller/Processor for the personal information provided.
+          Data Controller/Processor: {siteName} is the Data Controller/Processor
+          for the personal information provided.
         </p>
         <p className="w-full text-left">
           Legal Basis for Processing: Personal information is collected and used
