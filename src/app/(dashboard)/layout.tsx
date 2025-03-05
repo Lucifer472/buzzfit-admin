@@ -9,7 +9,7 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
   const session = await auth();
 
   if (!session || !session.user || !session.user.email) {
-    return redirect("/");
+    return redirect("/login");
   }
 
   const user = await getUserByEmail({ email: session.user.email });
@@ -19,10 +19,12 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <main className="max-w-screen-xl mx-auto px-4 space-y-12 w-full min-h-screen">
-      <Navbar />
-      {children}
-    </main>
+    <div className="bg-gradient-to-b from-sky-400 to-blue-400">
+      <main className="max-w-screen-xl mx-auto px-4 space-y-12 w-full min-h-screen">
+        <Navbar />
+        {children}
+      </main>
+    </div>
   );
 };
 

@@ -23,7 +23,7 @@ export const ImageUpload = ({
     }
 
     const file = e.target.files[0];
-    const maxSizeInBytes = 2 * 1024 * 1024; // 2MB in bytes
+    const maxSizeInBytes = 10 * 1024 * 1024; // 2MB in bytes
 
     // Check file size
     if (file.size > maxSizeInBytes) {
@@ -78,7 +78,7 @@ export const ImageUpload = ({
           type="file"
           ref={imgRef}
           className="hidden"
-          accept=".jpg, .png, .gif, .webp"
+          accept=".jpg, .png, .jpeg, .gif, .webp"
           id="upload-img"
           name="upload-img"
           onChange={handleUpload}

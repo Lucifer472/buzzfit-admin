@@ -59,3 +59,15 @@ export const userList = [
     value: "450000",
   },
 ];
+
+export const footerLinks = [
+  { name: "About Us", url: "/about-us" },
+  { name: "Privacy Policy", url: "/privacy-policy" },
+  { name: "User Terms", url: "/user-terms" },
+  { name: "Cookie Policy", url: "/cookie-policy" },
+  { name: "DMCA", url: "/dmca" },
+  { name: "Feedback", url: "https://docs.google.com/forms/d/e/1FAIpQLSejXLtQSzlnV816ClRGVKo434MbUQh4pGeWYjdO9s8dyp7PoQ/viewform?usp=header" },
+  { name: "Follow Us", url: "https://truepubmedia.com/" },
+]
+
+export const siteName = "Buzzfit"

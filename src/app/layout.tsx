@@ -4,10 +4,16 @@ import { cn } from "@/lib/utils";
 
 import "./globals.css";
 import { Toaster } from "sonner";
+import { siteName } from "@/constant";
 
 export const metadata: Metadata = {
-  title: "Admin Panel",
-  description: "Buzzfit Admin Panel not For Users",
+  title:
+    siteName +
+    "| All Quizzes, Trivia, Photo Effects, Articles And Viral Topics",
+  description:
+    "Dive into funny quizzes, free photo effects, compelling articles, and viral trends. Join @ now for unforgettable fun!",
+  keywords:
+    "test, quiz, IQ, EQ, love, relationship, fun tests, test me, test about me, IQ quiz, EQ quiz, love quiz, personality test, psychological test, quiz games, test games, online quiz, free quiz, my personality, my love, my test, real me, constellations, tarot",
 };
 
 const poppins = Poppins({
@@ -22,12 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "antialiased bg-gradient-to-b from-sky-400 to-blue-400 w-full",
-          poppins.className
-        )}
-      >
+      <body className={cn("antialiased w-full", poppins.className)}>
         <Toaster />
         {children}
       </body>

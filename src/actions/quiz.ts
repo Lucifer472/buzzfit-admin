@@ -25,7 +25,7 @@ export const addQuiz = async (v: z.infer<typeof QuizSchema>) => {
         ans2,
         ans3,
         category,
-        img,
+        image: img,
         quiz,
         url,
         users,
